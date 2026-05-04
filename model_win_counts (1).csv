@@ -1,0 +1,17 @@
+Model,Wins,Metric
+LGBMRegressor,6,MAE
+AutoETS,6,MAE
+Naive,5,MAE
+SeasonalNaive,2,MAE
+LGBMRegressor,9,RMSE
+AutoETS,7,RMSE
+Naive,2,RMSE
+SeasonalNaive,1,RMSE
+LGBMRegressor,8,MAPE
+AutoETS,4,MAPE
+SeasonalNaive,4,MAPE
+Naive,3,MAPE
+SeasonalNaive,8,ME
+AutoETS,4,ME
+LGBMRegressor,4,ME
+Naive,3,ME
