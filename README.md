@@ -1,2 +1,27 @@
 # Hotel-Demand-Forecasting-Project
 A comparative forecasting study of 17 hotel properties using the Nixtlaverse (StatsForecast, MLForecast, NeuralForecast) and Foundation Models (Chronos) to predict 28-day room demand.
+# Overview
+This project focuses on forecasting daily room demand for 17 hotel properties over a 28-day period. The goal was to compare different types of forecasting models, including traditional statistical methods, machine learning models, and neural networks, using a consistent time-series cross-validation approach.
+# Models Compared
+The models used in this project include:
+	•	Baseline models: Naive and Seasonal Naive
+	•	Statistical model: AutoETS (AutoARIMA was attempted but was too slow to run efficiently)
+	•	Machine learning model: LightGBM using MLForecast
+	•	Neural models: AutoNBEATS and AutoNHITS
+# Methodology
+The models were evaluated using a 5-fold time-series cross-validation setup with a forecast horizon of 28 days. Performance was measured using:
+	•	ME (to understand bias)
+	•	MAE
+	•	RMSE
+	•	MAPE (only when appropriate for the data)
+# Results
+Model performance varied across the different hotel properties. Overall, statistical and machine learning models performed consistently well, while neural models were better at capturing more complex patterns but required more computation time. No single model performed best across all properties, which shows that demand behavior differs depending on the hotel.
+# Files Included
+	•	cross_validation_results.csv: Cross-validation predictions
+	•	metric_summary_by_series_method.csv: Performance metrics by model and property
+	•	model_win_counts.csv: Count of how often each model performed best
+	•	final_test_forecasts.csv: Final 28-day forecasts
+	•	plots/: Visual comparisons of forecasts vs actual values
+	•	Notebook: Full code used for the project
+# Key Takeaways
+Overall, forecasting accuracy depends a lot on the specific characteristics of each time series. Simpler models worked well when demand patterns were stable, while more flexible models helped improve performance for properties with more variability.
