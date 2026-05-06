@@ -25,3 +25,5 @@ Model performance varied across the different hotel properties. Overall, statist
 	•	Notebook: Full code used for the project
 # Key Takeaways
 Overall, forecasting accuracy depends a lot on the specific characteristics of each time series. Simpler models worked well when demand patterns were stable, while more flexible models helped improve performance for properties with more variability.
+# Group Members
+Annie Freeman, Hannah Lux, Eileen Murray
